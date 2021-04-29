@@ -1,0 +1,24 @@
+{
+  "name": "wilsonramstead.github.io",
+  "version": "1.0.0",
+  "description": "Template website / portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilsonramstead/wilsonramstead.github.io.git"
+  },
+  "author": "Wilson Ramstead",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wilsonramstead/wilsonramstead.github.io/issues"
+  },
+  "homepage": "https://github.com/wilsonramstead/wilsonramstead.github.io#readme",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,129 @@
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    height: 300px;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: #1ad5ee;
+      @include easeOut;
+    }
+  }
+}
+// the normal 'text-secondary' was overwritten with  required bootstrap plugin for the carrousel in projects 2+. So had to create new class as workaround.
+.text-secondary2 {
+  color: #1ad5ee;
+}
+
+// WORK Detail below (when clicking on specific project on my-work page)
+.projectInfo-1,
+.projectInfo-2,
+.projectInfo-3 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.94;
+  visibility: hidden;
+  background: $primary-color;
+  padding-top: 5%;
+
+  &.show {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .imgContainer {
+    .carousel {
+      margin: 0px autos;
+    }
+  }
+  .projectContent {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+
+    // width: 80%;
+    overflow: auto;
+    display: block;
+    background: darken($primary-color, 5);
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    .words {
+      text-align: left;
+    }
+    h1 {
+      text-align: center;
+    }
+    a {
+      color: rgb(77, 169, 255);
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &.show {
+      // Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 768px) {
+  .imgContainer {
+    Iframe {
+      width: 100%;
+      margin: 25px 0px;
+    }
+    .carousel {
+      width: 100%;
+      margin: 25px auto;
+    }
+  }
+  .projectContent {
+    width: 100%;
+    height: 93vh;
+    padding: 1rem 2rem;
+  }
+  .words {
+    h2 {
+      font-size: 2rem;
+    }
+    p,
+    li {
+      font-size: 1.25rem;
+    }
+  }
+  #work h2 {
+    margin: 34px 0px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .imgContainer {
+    text-align: center;
+    Iframe {
+      width: 60%;
+    }
+    .carousel {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+  .projectContent {
+    width: 80%;
+    height: 80vh;
+    padding: 1.5rem 2.5rem;
+    border: 4px solid white;
+    border-radius: 20px;
+  }
+}

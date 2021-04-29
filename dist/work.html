@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Work</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item current">
+                    <a href="./work.html" class="nav-link">My Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="work">
+        <h1 class="lg-heading">My <span class="text-secondary2">Work</span></h1>
+        <h2 class="sm-heading">Check out some of my projects...</h2>
+        <div class="projects">
+            <div class="item project-1">
+                <a href="#!">
+                    <img src="../dist/img/historyCalendarImage.png" alt="Project">
+                    <a href="#" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </a>
+                    <a href="https://github.com/wilsonramstead/historyCalendar" target="_blank" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                </a>
+            </div>
+            <div class="item project-2">
+                <a href="#!">
+                    <img src="../dist/img/jumpman.png" alt="Project">
+                    <a href="#" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </a>
+                    <a href="https://github.com/wilsonramstead/jumpman" target="_blank" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                </a>
+            </div>
+            <div class="item project-3">
+                <a href="#!">
+                    <img src="../dist/img/goalTracker/gtGoalsPage.png" alt="Project">
+                    <a href="#" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </a>
+                    <a href="#" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#!">
+                    <img src="../dist/img/background.jpg" alt="Project">
+                    <a href="#" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </a>
+                    <a href="#" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="projectInfo-1">
+            <div class="projectContent">
+                <h1 class="lg-heading">History <span class="text-secondary2">Calendar</span></h1>
+                <div class="imgContainer">
+                    <iframe height="350" src="https://www.youtube.com/embed/Wl_tS_-rgnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="words">
+                    <h2 class="text-secondary2">Description</h2>
+                    <p>I built a calendar, where each day (when clicked) provides centuries of history for events, births, and deaths. This is an Angular application hosted on an AWS Ubuntu server. The logic behind how the calendar information is gathered and displayed is very interesting, and built with javascript using the dayjs library -- this builds an array of days/months (in the backend) for the angular html to iterate through to build the calendar display. The history data is retrieved using an Express.js server, which retrieves data from the below API using the selected day parameters passed from Angular after clicking a day on the calendar.</p>
+                    <h2 class="text-secondary2">Technologies</h2>
+                    <ul>
+                        <li><strong>Front End:</strong> Angular</li>
+                        <li><strong>Back End:</strong> Express.js</li>
+                        <li><strong>No Database:</strong> Data is pulled from API call.</li>
+                        <li><strong>Web Server:</strong> Deployed online via <strong>AWS EC2 Ubuntu 18.04 LTS server</strong>  -- (currently unavailable due to costs). </p></li>
+                    </ul>
+                    <p>Code can be found here: <a href="https://github.com/wilsonramstead/historyCalendar" target="_blank">https://github.com/wilsonramstead/historyCalendar</a></p>
+                    <h2 class="text-secondary2">Sources</h2>
+                    <ul>
+                        <li><strong>History API: </strong><a href="https://history.muffinlabs.com/#ticker" target="_blank">https://history.muffinlabs.com/#ticker</a></li>
+                        <li><strong>Calendar logic (before implementing into angular typescript app): </strong> <a href="https://css-tricks.com/how-to-make-a-monthly-calendar-with-real-data/" target="_blank">https://css-tricks.com/how-to-make-a-monthly-calendar-with-real-data/</a></li>
+                        <li><strong>Background image: </strong><a href="https://unsplash.com/photos/cs0sK0gzqCU" target="_blank">https://unsplash.com/photos/cs0sK0gzqCU</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="projectInfo-2">
+            <div class="projectContent">
+                <h1 class="lg-heading">Jump<span class="text-secondary2">man</span></h1>
+                <div class="imgContainer">
+                    <iframe height="350" src="https://www.youtube.com/embed/3ICg-yqH624" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="words">
+                    <h2 class="text-secondary2">Description</h2>
+                    <p>A game giving the user control of Iron Man who is faced with a never ending, unrelenting force of barriers. Use the keys to control left/right movement, and the spacebar to temporarily slow down (lasting 2 seconds). The barriers are generated dynamically with random lengths and random gap sizes, moving at a set speed with a set distance between them. </p>
+                    <h2 class="text-secondary2">Technologies</h2>
+                    <ul>
+                        <li><strong>Front End: </strong> The game itself is created dynamically using one <strong>Javascript</strong> file, that generates the HTML content. The script creates the entire user interface and game content.</li>
+                        <li><strong>Back End: </strong> The overall app (minus the game, see below) is built with a simple <strong>Python framework, Django</strong>. This allows users to navigate between screens, and submit content like high scores.</li>
+                        <li><strong>Database: </strong> SQLite. The database to store user information like high scores.</li>
+                        <li><strong>Web Server: </strong> Deployed online via <strong>AWS EC2 Ubuntu 16.04 LTS server</strong>  -- (currently unavailable due to costs). </p></li>
+                    </ul>
+                    <p>Code can be found here: <a href="https://github.com/wilsonramstead/jumpman" target="_blank">https://github.com/wilsonramstead/jumpman</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="projectInfo-3">
+            <div class="projectContent">
+                <h1 class="lg-heading">Goal <span class="text-secondary2">Tracker</span></h1>
+                <div class="imgContainer">
+                    <div class="carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="../dist/img/goalTracker/gtGoalsPage.png" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="../dist/img/goalTracker/gtNewGoal.png" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="../dist/img/goalTracker/gtCalendar1.png" alt="Third slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="../dist/img/goalTracker/gtCalendar2.png" alt="Fourths slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="words">
+                    <h2 class="text-secondary2">Description</h2>
+                    <p>full stack application for users to track the daily progress of custom goals with custom data, via a calendar. Auto updating features and unique backend logic applied.</p>
+                    <h2 class="text-secondary2">Technologies</h2>
+                    <ul> Built with Angular, Express, MongoDB and Node.
+                        <li><strong>Front End: </strong> Angular.js</li>
+                        <li><strong>Back End: </strong> Express.js</li>
+                        <li><strong>Database: </strong> MongoDB</li>
+                        <li><strong>Web Server: </strong> Never deployed, only used locally for personal use.</p></li>
+                    </ul>
+                    <p>Code can be found here: <a href="https://github.com/wilsonramstead/GoalTracker" target="_blank">https://github.com/wilsonramstead/GoalTracker</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2021
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/myWork.js"></script>
+</body>
+</html>

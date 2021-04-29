@@ -1,0 +1,77 @@
+.job-1,
+.job-2,
+.job-3 {
+  cursor: pointer;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    span {
+      color: set-text-color($secondary-color);
+    }
+
+    .companyLink {
+      color: set-text-color($primary-color);
+    }
+  }
+}
+
+.job {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+
+  .companyLink {
+    color: $secondary-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  h3 {
+    padding-top: 10px;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+  h3,
+  h6 {
+    line-height: 0.8rem;
+  }
+}
+
+// ABOUT DETAILS BELOW (when clicking on Job on about page)
+.jobInfo-1,
+.jobInfo-2,
+.jobInfo-3 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.94;
+  visibility: hidden;
+  background: $primary-color;
+
+  &.show {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .aboutContent {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    padding: 1.5rem 2.5rem;
+
+    width: 90%;
+    height: 100vh;
+    overflow: auto;
+    display: block;
+    background: darken($primary-color, 5);
+    transform: translate3d(0, -100%, 0);
+    @include easeOut;
+
+    &.show {
+      // Slide in from top
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
