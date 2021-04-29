@@ -1,0 +1,59 @@
+.boxes {
+  div {
+    background: rgba(90, 173, 255, 0.623);
+    border: 3px #fff solid;
+    border-radius: 20px;
+
+    &:hover {
+      cursor: pointer;
+      background: $secondary-color;
+      color: set-text-color($secondary-color);
+      span {
+        color: set-text-color($secondary-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #contact {
+    width: 100%;
+    text-align: center;
+
+    .pitch {
+      width: 100%;
+    }
+  }
+  .boxes div {
+    margin: 15px auto;
+    height: 60px;
+    padding-top: 1px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+      font-size: 2rem;
+      padding: 1.5rem 2.5rem;
+      margin-bottom: 3rem;
+      @include easeOut;
+
+      &:hover {
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+  .pitch {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
