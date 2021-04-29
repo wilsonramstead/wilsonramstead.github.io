@@ -39,6 +39,8 @@ function toggleMenu() {
 const project1 = document.querySelector('.project-1').addEventListener("click", function() { toggleProjectDetails('1') });
 const project2 = document.querySelector('.project-2').addEventListener("click", function() { toggleProjectDetails('2') });
 const project3 = document.querySelector('.project-3').addEventListener("click", function() { toggleProjectDetails('3') });
+const project4 = document.querySelector('.project-4').addEventListener("click", function() { toggleProjectDetails('4') });
+const project5 = document.querySelector('.project-5').addEventListener("click", function() { toggleProjectDetails('5') });
 
 function toggleProjectDetails(projectNumber) {
     console.log('clicked')

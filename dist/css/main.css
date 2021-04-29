@@ -179,7 +179,9 @@
 
 .projectInfo-1,
 .projectInfo-2,
-.projectInfo-3 {
+.projectInfo-3,
+.projectInfo-4,
+.projectInfo-5 {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -192,16 +194,22 @@
   padding-top: 5%; }
   .projectInfo-1.show,
   .projectInfo-2.show,
-  .projectInfo-3.show {
+  .projectInfo-3.show,
+  .projectInfo-4.show,
+  .projectInfo-5.show {
     visibility: visible;
     transform: translate3d(0, 0, 0); }
   .projectInfo-1 .imgContainer .carousel,
   .projectInfo-2 .imgContainer .carousel,
-  .projectInfo-3 .imgContainer .carousel {
+  .projectInfo-3 .imgContainer .carousel,
+  .projectInfo-4 .imgContainer .carousel,
+  .projectInfo-5 .imgContainer .carousel {
     margin: 0px autos; }
   .projectInfo-1 .projectContent,
   .projectInfo-2 .projectContent,
-  .projectInfo-3 .projectContent {
+  .projectInfo-3 .projectContent,
+  .projectInfo-4 .projectContent,
+  .projectInfo-5 .projectContent {
     display: flex;
     flex-flow: column wrap;
     margin: 0 auto;
@@ -212,23 +220,33 @@
     transition: all 0.5s ease-out; }
     .projectInfo-1 .projectContent .words,
     .projectInfo-2 .projectContent .words,
-    .projectInfo-3 .projectContent .words {
+    .projectInfo-3 .projectContent .words,
+    .projectInfo-4 .projectContent .words,
+    .projectInfo-5 .projectContent .words {
       text-align: left; }
     .projectInfo-1 .projectContent h1,
     .projectInfo-2 .projectContent h1,
-    .projectInfo-3 .projectContent h1 {
+    .projectInfo-3 .projectContent h1,
+    .projectInfo-4 .projectContent h1,
+    .projectInfo-5 .projectContent h1 {
       text-align: center; }
     .projectInfo-1 .projectContent a,
     .projectInfo-2 .projectContent a,
-    .projectInfo-3 .projectContent a {
+    .projectInfo-3 .projectContent a,
+    .projectInfo-4 .projectContent a,
+    .projectInfo-5 .projectContent a {
       color: #4da9ff; }
       .projectInfo-1 .projectContent a:hover,
       .projectInfo-2 .projectContent a:hover,
-      .projectInfo-3 .projectContent a:hover {
+      .projectInfo-3 .projectContent a:hover,
+      .projectInfo-4 .projectContent a:hover,
+      .projectInfo-5 .projectContent a:hover {
         text-decoration: underline; }
     .projectInfo-1 .projectContent.show,
     .projectInfo-2 .projectContent.show,
-    .projectInfo-3 .projectContent.show {
+    .projectInfo-3 .projectContent.show,
+    .projectInfo-4 .projectContent.show,
+    .projectInfo-5 .projectContent.show {
       transform: translate3d(0, 0, 0); }
 
 @media screen and (max-width: 768px) {
@@ -254,7 +272,8 @@
   .imgContainer {
     text-align: center; }
     .imgContainer Iframe {
-      width: 60%; }
+      width: 60%;
+      margin: 25px 0px; }
     .imgContainer .carousel {
       width: 80%;
       margin: 10px auto; }

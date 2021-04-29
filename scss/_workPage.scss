@@ -23,7 +23,9 @@
 // WORK Detail below (when clicking on specific project on my-work page)
 .projectInfo-1,
 .projectInfo-2,
-.projectInfo-3 {
+.projectInfo-3,
+.projectInfo-4,
+.projectInfo-5 {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -113,6 +115,7 @@
     text-align: center;
     Iframe {
       width: 60%;
+      margin: 25px 0px;
     }
     .carousel {
       width: 80%;
