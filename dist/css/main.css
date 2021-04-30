@@ -284,6 +284,73 @@
     border: 4px solid white;
     border-radius: 20px; } }
 
+.job-1,
+.job-2,
+.job-3 {
+  cursor: pointer; }
+  .job-1:hover,
+  .job-2:hover,
+  .job-3:hover {
+    background: #1ad5ee;
+    color: #000; }
+    .job-1:hover span,
+    .job-2:hover span,
+    .job-3:hover span {
+      color: #000; }
+    .job-1:hover .companyLink,
+    .job-2:hover .companyLink,
+    .job-3:hover .companyLink {
+      color: #fff; }
+
+.job {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #1ad5ee 5px solid; }
+  .job .companyLink {
+    color: #1ad5ee; }
+    .job .companyLink:hover {
+      text-decoration: underline; }
+  .job h3 {
+    padding-top: 10px; }
+  .job h6 {
+    font-size: 0.8rem; }
+  .job h3,
+  .job h6 {
+    line-height: 0.8rem; }
+
+.jobInfo-1,
+.jobInfo-2,
+.jobInfo-3 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.94;
+  visibility: hidden;
+  background: #444; }
+  .jobInfo-1.show,
+  .jobInfo-2.show,
+  .jobInfo-3.show {
+    visibility: visible;
+    transform: translate3d(0, 0, 0); }
+  .jobInfo-1 .aboutContent,
+  .jobInfo-2 .aboutContent,
+  .jobInfo-3 .aboutContent {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    padding: 1.5rem 2.5rem;
+    width: 90%;
+    height: 100vh;
+    overflow: auto;
+    display: block;
+    background: #373737;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
+    .jobInfo-1 .aboutContent.show,
+    .jobInfo-2 .aboutContent.show,
+    .jobInfo-3 .aboutContent.show {
+      transform: translate3d(0, 0, 0); }
+
 .boxes div {
   background: rgba(90, 173, 255, 0.623);
   border: 3px #fff solid;
@@ -295,7 +362,16 @@
     .boxes div:hover span {
       color: #000; }
 
+.pitch a {
+  color: #4da9ff; }
+  .pitch a:hover {
+    cursor: pointer;
+    text-decoration: underline; }
+
 @media screen and (max-width: 768px) {
+  .aboutContent h1 {
+    text-align: center;
+    margin: 30px auto; }
   #contact {
     width: 100%;
     text-align: center; }
@@ -307,6 +383,8 @@
     padding-top: 1px; } }
 
 @media screen and (min-width: 769px) {
+  .aboutContent h1 {
+    font-size: 4rem; }
   .boxes {
     display: flex;
     flex-wrap: wrap;

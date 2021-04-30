@@ -1,3 +1,5 @@
+@import "aboutPage";
+
 .boxes {
   div {
     background: rgba(90, 173, 255, 0.623);
@@ -15,7 +17,20 @@
   }
 }
 
+.pitch a {
+  color: rgb(77, 169, 255);
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .aboutContent h1 {
+    // font-size: 3rem;
+    text-align: center;
+    margin: 30px auto;
+  }
   #contact {
     width: 100%;
     text-align: center;
@@ -32,6 +47,9 @@
 }
 
 @media screen and (min-width: 769px) {
+  .aboutContent h1 {
+    font-size: 4rem;
+  }
   .boxes {
     display: flex;
     flex-wrap: wrap;
