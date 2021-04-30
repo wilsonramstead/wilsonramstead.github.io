@@ -43,7 +43,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden;
 
   &.show {
@@ -55,7 +55,6 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     float: left;
     width: 50%;
     height: 100vh;
@@ -80,6 +79,8 @@
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
+    justify-content: center;
+
     @include easeOut;
 
     &.show {

@@ -1,6 +1,6 @@
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
@@ -10,14 +10,14 @@
 
     &:hover {
       opacity: 0.5;
-      border-color: #1ad5ee;
+      border-color: #10e9b3;
       @include easeOut;
     }
   }
 }
 // the normal 'text-secondary' was overwritten with  required bootstrap plugin for the carrousel in projects 2+. So had to create new class as workaround.
 .text-secondary2 {
-  color: #1ad5ee;
+  color: #10e9b3;
 }
 
 // WORK Detail below (when clicking on specific project on my-work page)
@@ -31,7 +31,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   opacity: 0.94;
   visibility: hidden;
   background: $primary-color;

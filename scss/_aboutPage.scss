@@ -8,21 +8,18 @@
     span {
       color: set-text-color($secondary-color);
     }
-
     .companyLink {
       color: set-text-color($primary-color);
     }
   }
 }
-
 .job {
-  background: lighten($primary-color, 5);
+  background: lighten($primary-color, 15);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
-
+  height: 280px;
   .companyLink {
     color: $secondary-color;
-
     &:hover {
       text-decoration: underline;
     }
@@ -54,7 +51,6 @@
     visibility: visible;
     transform: translate3d(0, 0, 0);
   }
-
   .aboutContent {
     display: flex;
     flex-flow: column wrap;
@@ -73,5 +69,70 @@
       // Slide in from top
       transform: translate3d(0, 0, 0);
     }
+  }
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 768px) {
+  .about-info {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 20px;
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .bio-image {
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+  .bio {
+    font-size: 1.5rem;
+  }
+  .job {
+    margin-top: 50px;
+    h3 {
+      line-height: 1.5rem;
+    }
+    h6 {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: $secondary-color 3px solid;
+  }
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
   }
 }

@@ -11,8 +11,6 @@ let closeOption = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-    console.log('closeOption: ', closeOption);
-    console.log('showMenu: ', showMenu);
     if(!closeOption) {
         if(!showMenu) {
             menuBtn.classList.add('close');

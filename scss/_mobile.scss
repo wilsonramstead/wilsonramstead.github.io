@@ -15,42 +15,8 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas: "bioimage bio bio" "job1 job2 job3";
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
-
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-
-    p {
-      font-size: 1.2rem;
-    }
-  }
-
-  .job-1 {
-    grid-area: job1;
-  }
-
-  .job-2 {
-    grid-area: job2;
-  }
-
-  .job-3 {
-    grid-area: job3;
+  .menu-nav {
+    justify-content: center;
   }
 }
 
@@ -64,8 +30,10 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+    .sm-heading {
+      margin-top: 3rem;
+    }
   }
-
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -76,15 +44,14 @@
       transform: translate3d(0, 0, 0);
     }
   }
-
   .menu-nav {
-    height: 75vh;
+    height: 67vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
+    padding-top: 25px;
   }
-
   .menu-branding {
-    height: 25vh;
+    height: 33vh;
     transform: translate3d(100%, 0, 0);
 
     .portrait {
@@ -94,7 +61,6 @@
       background-size: cover;
     }
   }
-
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -105,49 +71,17 @@
     padding: 2rem;
     .lg-heading {
       margin-top: 1rem;
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
     &.sm-heading {
       font-size: 1.5rem;
+      margin-top: 3rem;
     }
   }
   main#home h1 {
     margin-top: 10vh;
   }
-
   .projects {
     grid-template-columns: 1fr;
-  }
-
-  .about-info {
-    width: 100%;
-    min-height: 100vh;
-    padding-bottom: 20px;
-    p {
-      font-size: 1.2rem;
-    }
-  }
-
-  .bio-image {
-    margin: auto;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
-
-  .bio {
-    font-size: 1.5rem;
-  }
-
-  .job {
-    margin-top: 50px;
-
-    h3 {
-      line-height: 1.5rem;
-    }
-    h6 {
-      font-size: 1rem;
-    }
   }
 }

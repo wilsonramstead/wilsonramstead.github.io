@@ -11,8 +11,6 @@ let closeOption = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-    console.log('closeOption: ', closeOption);
-    console.log('showMenu: ', showMenu);
     if(!closeOption) {
         if(!showMenu) {
             menuBtn.classList.add('close');
@@ -43,7 +41,6 @@ const project4 = document.querySelector('.project-4').addEventListener("click", 
 const project5 = document.querySelector('.project-5').addEventListener("click", function() { toggleProjectDetails('5') });
 
 function toggleProjectDetails(projectNumber) {
-    console.log('clicked')
     if(!closeOption) {
         menuBtn.classList.add('close');
         document.querySelector('.projectInfo-' + projectNumber).classList.add('show');
