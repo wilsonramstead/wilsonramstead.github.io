@@ -10,14 +10,14 @@
 
     &:hover {
       opacity: 0.5;
-      border-color: #10e9b3;
+      border-color: #42ffd0;
       @include easeOut;
     }
   }
 }
 // the normal 'text-secondary' was overwritten with  required bootstrap plugin for the carrousel in projects 2+. So had to create new class as workaround.
 .text-secondary2 {
-  color: #10e9b3;
+  color: #42ffd0;
 }
 
 // WORK Detail below (when clicking on specific project on my-work page)
