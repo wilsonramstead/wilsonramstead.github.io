@@ -39,6 +39,7 @@ const project2 = document.querySelector('.project-2').addEventListener("click", 
 const project3 = document.querySelector('.project-3').addEventListener("click", function() { toggleProjectDetails('3') });
 const project4 = document.querySelector('.project-4').addEventListener("click", function() { toggleProjectDetails('4') });
 const project5 = document.querySelector('.project-5').addEventListener("click", function() { toggleProjectDetails('5') });
+const project6 = document.querySelector('.project-6').addEventListener("click", function() { toggleProjectDetails('6') });
 
 function toggleProjectDetails(projectNumber) {
     if(!closeOption) {
