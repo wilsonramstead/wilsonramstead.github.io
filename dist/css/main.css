@@ -542,7 +542,8 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
-    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
     background: rgba(96, 96, 96, 0.6); }
 

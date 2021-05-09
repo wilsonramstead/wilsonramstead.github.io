@@ -26,12 +26,9 @@ h3 {
   margin: 0;
   font-weight: 400;
 
-  // &.lg-heading {
-  //   font-size: 3rem;
-  // }
-
   &.sm-heading {
-    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 20), 0.6);
   }
