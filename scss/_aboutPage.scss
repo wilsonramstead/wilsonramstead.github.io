@@ -3,8 +3,9 @@
 .job-3 {
   cursor: pointer;
   &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
+    background: #63d0df;
+    // color: set-text-color($secondary-color);
+    color: black;
     span {
       color: set-text-color($secondary-color);
     }
@@ -17,12 +18,7 @@
   background: lighten($primary-color, 15);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
-  .companyLink {
-    color: $secondary-color;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+
   h3 {
     padding-top: 10px;
   }
