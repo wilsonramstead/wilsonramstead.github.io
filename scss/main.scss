@@ -110,6 +110,8 @@ main {
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
+  position: relative;
+  z-index: 1;
   height: 60px;
 }
 

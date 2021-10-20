@@ -209,13 +209,11 @@
   grid-gap: 1.5rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects .item {
-    position: relative;
-    z-index: -1;
     box-shadow: 0 2.8px 2.2px rgba(255, 255, 255, 0.068), 0 6.7px 5.3px rgba(255, 255, 255, 0.096), 0 12.5px 10px rgba(255, 255, 255, 0.12), 0 22.3px 17.9px rgba(255, 255, 255, 0.144), 0 41.8px 33.4px rgba(255, 255, 255, 0.172), 0 100px 80px rgba(255, 255, 255, 0.24); }
   .projects img {
     width: 100%;
-    height: 300px;
-    border: 3px #fff solid; }
+    height: 30vh;
+    border: 3px black solid; }
     .projects img:hover {
       opacity: 0.5;
       border-color: #30e5fd;
@@ -595,6 +593,8 @@ main {
   padding: 1rem;
   background: #5b5b5b;
   color: #000;
+  position: relative;
+  z-index: 1;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
