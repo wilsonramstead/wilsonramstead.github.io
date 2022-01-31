@@ -15,7 +15,7 @@
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line {
-      background: #30e5fd; }
+      background: #006cf8; }
       .menu-btn.close .btn-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px); }
       .menu-btn.close .btn-line:nth-child(2) {
@@ -42,14 +42,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #767676;
+    background: #a4a4a4;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #838383;
+    background: #b1b1b1;
     transform: translate3d(0, 100%, 0);
     justify-content: center;
     transition: all 0.5s ease-out; }
@@ -61,14 +61,14 @@
       background: url("../img/portrait.jpeg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #30e5fd; }
+      border: solid 3px #006cf8; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #30e5fd; }
+      color: #006cf8; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -80,7 +80,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #30e5fd; }
+      color: #006cf8; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -101,7 +101,7 @@
   .job-1:hover,
   .job-2:hover,
   .job-3:hover {
-    background: #63d0df;
+    background: #acd0ff;
     color: black; }
     .job-1:hover span,
     .job-2:hover span,
@@ -113,10 +113,12 @@
       color: #000; }
 
 .job {
-  background: darkgray;
+  background: #d7d7d7;
   padding: 0.5rem;
   border: 2.5px solid black;
-  border-bottom: #30e5fd 5px solid; }
+  border-bottom: #006cf8 5px solid; }
+  .job .text-secondary {
+    color: #0051bb; }
   .job h3 {
     padding-top: 10px; }
   .job h6 {
@@ -133,7 +135,7 @@
   width: 100%;
   opacity: 0.94;
   visibility: hidden;
-  background: #838383; }
+  background: #b1b1b1; }
   .jobInfo-1.show,
   .jobInfo-2.show,
   .jobInfo-3.show {
@@ -150,13 +152,20 @@
     height: 100vh;
     overflow: auto;
     display: block;
-    background: #767676;
+    background: #323232;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .jobInfo-1 .aboutContent.show,
     .jobInfo-2 .aboutContent.show,
     .jobInfo-3 .aboutContent.show {
       transform: translate3d(0, 0, 0); }
+    .jobInfo-1 .aboutContent p,
+    .jobInfo-1 .aboutContent li,
+    .jobInfo-2 .aboutContent p,
+    .jobInfo-2 .aboutContent li,
+    .jobInfo-3 .aboutContent p,
+    .jobInfo-3 .aboutContent li {
+      color: white; }
 
 @media screen and (max-width: 768px) {
   .about-info {
@@ -170,7 +179,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #30e5fd 3px solid; }
+    border: #006cf8 3px solid; }
   .bio {
     font-size: 1.5rem; }
     .bio p {
@@ -197,7 +206,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #30e5fd 3px solid; }
+    border: #006cf8 3px solid; }
   .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -222,11 +231,11 @@
     border: 3px black solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #30e5fd;
+      border-color: #006cf8;
       transition: all 0.5s ease-out; }
 
 .text-secondary2 {
-  color: #30e5fd; }
+  color: #006cf8; }
 
 .projectInfo-1,
 .projectInfo-2,
@@ -242,7 +251,7 @@
   width: 100vw;
   opacity: 0.94;
   visibility: hidden;
-  background: #838383;
+  background: #b1b1b1;
   padding-top: 5%; }
   .projectInfo-1.show,
   .projectInfo-2.show,
@@ -270,7 +279,7 @@
     margin: 0 auto;
     overflow: auto;
     display: block;
-    background: #767676;
+    background: #323232;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .projectInfo-1 .projectContent .words,
@@ -286,7 +295,8 @@
     .projectInfo-4 .projectContent h1,
     .projectInfo-5 .projectContent h1,
     .projectInfo-6 .projectContent h1 {
-      text-align: center; }
+      text-align: center;
+      color: white; }
     .projectInfo-1 .projectContent a,
     .projectInfo-2 .projectContent a,
     .projectInfo-3 .projectContent a,
@@ -308,6 +318,19 @@
     .projectInfo-5 .projectContent.show,
     .projectInfo-6 .projectContent.show {
       transform: translate3d(0, 0, 0); }
+    .projectInfo-1 .projectContent li,
+    .projectInfo-1 .projectContent p,
+    .projectInfo-2 .projectContent li,
+    .projectInfo-2 .projectContent p,
+    .projectInfo-3 .projectContent li,
+    .projectInfo-3 .projectContent p,
+    .projectInfo-4 .projectContent li,
+    .projectInfo-4 .projectContent p,
+    .projectInfo-5 .projectContent li,
+    .projectInfo-5 .projectContent p,
+    .projectInfo-6 .projectContent li,
+    .projectInfo-6 .projectContent p {
+      color: white; }
 
 @media screen and (max-width: 768px) {
   .imgContainer Iframe {
@@ -338,8 +361,8 @@
       width: 80%;
       margin: 10px auto; }
   .projectContent {
-    width: 80%;
-    height: 80vh;
+    width: 92%;
+    height: 85vh;
     padding: 1.5rem 2.5rem;
     border: 4px solid white;
     border-radius: 20px; } }
@@ -351,7 +374,7 @@
   .job-1:hover,
   .job-2:hover,
   .job-3:hover {
-    background: #63d0df;
+    background: #acd0ff;
     color: black; }
     .job-1:hover span,
     .job-2:hover span,
@@ -363,10 +386,12 @@
       color: #000; }
 
 .job {
-  background: darkgray;
+  background: #d7d7d7;
   padding: 0.5rem;
   border: 2.5px solid black;
-  border-bottom: #30e5fd 5px solid; }
+  border-bottom: #006cf8 5px solid; }
+  .job .text-secondary {
+    color: #0051bb; }
   .job h3 {
     padding-top: 10px; }
   .job h6 {
@@ -383,7 +408,7 @@
   width: 100%;
   opacity: 0.94;
   visibility: hidden;
-  background: #838383; }
+  background: #b1b1b1; }
   .jobInfo-1.show,
   .jobInfo-2.show,
   .jobInfo-3.show {
@@ -400,13 +425,20 @@
     height: 100vh;
     overflow: auto;
     display: block;
-    background: #767676;
+    background: #323232;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .jobInfo-1 .aboutContent.show,
     .jobInfo-2 .aboutContent.show,
     .jobInfo-3 .aboutContent.show {
       transform: translate3d(0, 0, 0); }
+    .jobInfo-1 .aboutContent p,
+    .jobInfo-1 .aboutContent li,
+    .jobInfo-2 .aboutContent p,
+    .jobInfo-2 .aboutContent li,
+    .jobInfo-3 .aboutContent p,
+    .jobInfo-3 .aboutContent li {
+      color: white; }
 
 @media screen and (max-width: 768px) {
   .about-info {
@@ -420,7 +452,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #30e5fd 3px solid; }
+    border: #006cf8 3px solid; }
   .bio {
     font-size: 1.5rem; }
     .bio p {
@@ -447,7 +479,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #30e5fd 3px solid; }
+    border: #006cf8 3px solid; }
   .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -461,15 +493,18 @@
     grid-area: job3; } }
 
 .boxes div {
-  background: #30e5fd;
+  background: #006cf8;
   border: 3px #fff solid;
   border-radius: 20px; }
   .boxes div:hover {
     cursor: pointer;
-    background: #00b0c7;
+    background: #5fa5ff;
     color: #000; }
     .boxes div:hover span {
       color: #000; }
+
+.aboutContent h1 {
+  color: white; }
 
 .pitch a {
   text-align: center; }
@@ -503,8 +538,6 @@
       padding: 1.5rem 2.5rem;
       margin-bottom: 3rem;
       transition: all 0.5s ease-out; }
-      .boxes div:hover {
-        padding: 0.5rem 1.5rem; }
   .pitch {
     width: 60%;
     margin: 0px auto;
@@ -515,7 +548,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #838383;
+  background: #b1b1b1;
   color: #000;
   height: 100%;
   margin: 0;
@@ -534,7 +567,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(131, 131, 131, 0.8); }
+      background: rgba(177, 177, 177, 0.8); }
 
 h1,
 h2,
@@ -547,7 +580,11 @@ h3 {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
-    background: rgba(182, 182, 182, 0.6); }
+    background: rgba(228, 228, 228, 0.6);
+    border-bottom: 2px solid #006cf8;
+    border-left: 2px solid #006cf8;
+    border-right: 2px solid white;
+    border-top: 2px solid white; }
 
 .companyLink {
   color: #f1faff;
@@ -566,7 +603,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #30e5fd; }
+  color: #006cf8; }
 
 main {
   padding: 2rem;
@@ -576,7 +613,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #30e5fd;
+        color: #006cf8;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -589,11 +626,11 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #30e5fd;
+    background: #006cf8;
     color: #000; }
 
 .btn-dark {
-  background: #040404;
+  background: #323232;
   color: #fff; }
 
 .btn-light {
@@ -603,7 +640,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #6a6a6a;
+  background: #989898;
   color: #000;
   position: relative;
   z-index: 1;

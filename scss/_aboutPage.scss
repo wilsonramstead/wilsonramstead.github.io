@@ -3,8 +3,7 @@
 .job-3 {
   cursor: pointer;
   &:hover {
-    background: #63d0df;
-    // color: set-text-color($secondary-color);
+    background: lighten($secondary-color, 35);
     color: black;
     span {
       color: set-text-color($secondary-color);
@@ -15,10 +14,14 @@
   }
 }
 .job {
-  background: lighten($primary-color, 15);
+  background: lighten($primary-color, 15s);
   padding: 0.5rem;
   border: 2.5px solid black;
   border-bottom: $secondary-color 5px solid;
+
+  .text-secondary {
+    color: darken($secondary-color, $amount: 12);
+  }
 
   h3 {
     padding-top: 10px;
@@ -52,18 +55,22 @@
     flex-flow: column wrap;
     margin: 0 auto;
     padding: 1.5rem 2.5rem;
-
     width: 90%;
     height: 100vh;
     overflow: auto;
     display: block;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 50);
     transform: translate3d(0, -100%, 0);
     @include easeOut;
 
     &.show {
       // Slide in from top
       transform: translate3d(0, 0, 0);
+    }
+
+    p,
+    li {
+      color: white;
     }
   }
 }

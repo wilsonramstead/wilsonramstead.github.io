@@ -2,20 +2,24 @@
 
 .boxes {
   div {
-    background: #30e5fd;
-    // background: #2bb3c5;
+    background: $secondary-color;
     border: 3px #fff solid;
     border-radius: 20px;
 
     &:hover {
       cursor: pointer;
       // background: $secondary-color;
-      background: #00b0c7;
+      background: lighten($secondary-color, $amount: 20);
       color: set-text-color($secondary-color);
       span {
         color: set-text-color($secondary-color);
       }
     }
+  }
+}
+.aboutContent {
+  h1 {
+    color: white;
   }
 }
 
@@ -60,10 +64,6 @@
       padding: 1.5rem 2.5rem;
       margin-bottom: 3rem;
       @include easeOut;
-
-      &:hover {
-        padding: 0.5rem 1.5rem;
-      }
     }
   }
   .pitch {
