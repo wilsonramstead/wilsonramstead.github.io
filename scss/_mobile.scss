@@ -76,9 +76,14 @@
       margin-top: 1rem;
       font-size: 3.5rem;
     }
+  }
+  h1,
+  h2,
+  h3 {
     &.sm-heading {
-      font-size: 1.5rem;
-      margin-top: 3rem;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      margin-top: 1.5rem;
     }
   }
   main#home h1 {

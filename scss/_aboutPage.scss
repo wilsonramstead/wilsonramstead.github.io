@@ -17,6 +17,7 @@
 .job {
   background: lighten($primary-color, 15);
   padding: 0.5rem;
+  border: 2.5px solid black;
   border-bottom: $secondary-color 5px solid;
 
   h3 {
@@ -86,13 +87,21 @@
   }
   .bio {
     font-size: 1.5rem;
+    p {
+      font-size: 1.05rem;
+    }
   }
   .job {
     margin-top: 50px;
+
     h3 {
       line-height: 1.5rem;
+      font-size: 1.1rem;
     }
     h6 {
+      font-size: 0.85rem;
+    }
+    p {
       font-size: 1rem;
     }
   }

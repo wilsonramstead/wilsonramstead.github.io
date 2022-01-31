@@ -115,6 +115,7 @@
 .job {
   background: darkgray;
   padding: 0.5rem;
+  border: 2.5px solid black;
   border-bottom: #30e5fd 5px solid; }
   .job h3 {
     padding-top: 10px; }
@@ -172,11 +173,16 @@
     border: #30e5fd 3px solid; }
   .bio {
     font-size: 1.5rem; }
+    .bio p {
+      font-size: 1.05rem; }
   .job {
     margin-top: 50px; }
     .job h3 {
-      line-height: 1.5rem; }
+      line-height: 1.5rem;
+      font-size: 1.1rem; }
     .job h6 {
+      font-size: 0.85rem; }
+    .job p {
       font-size: 1rem; } }
 
 @media screen and (min-width: 769px) {
@@ -359,6 +365,7 @@
 .job {
   background: darkgray;
   padding: 0.5rem;
+  border: 2.5px solid black;
   border-bottom: #30e5fd 5px solid; }
   .job h3 {
     padding-top: 10px; }
@@ -416,11 +423,16 @@
     border: #30e5fd 3px solid; }
   .bio {
     font-size: 1.5rem; }
+    .bio p {
+      font-size: 1.05rem; }
   .job {
     margin-top: 50px; }
     .job h3 {
-      line-height: 1.5rem; }
+      line-height: 1.5rem;
+      font-size: 1.1rem; }
     .job h6 {
+      font-size: 0.85rem; }
+    .job p {
       font-size: 1rem; } }
 
 @media screen and (min-width: 769px) {
@@ -650,9 +662,12 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 3.5rem; }
-    main.sm-heading {
-      font-size: 1.5rem;
-      margin-top: 3rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem; }
   main#home h1 {
     margin-top: 10vh; }
   .projects {
