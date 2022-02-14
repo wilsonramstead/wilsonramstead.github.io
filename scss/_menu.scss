@@ -94,6 +94,12 @@
       background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      box-shadow: 0 2.8px 2.2px rgba(255, 255, 255, 0.068),
+        0 6.7px 5.3px rgba(255, 255, 255, 0.096),
+        0 12.5px 10px rgba(255, 255, 255, 0.12),
+        0 22.3px 17.9px rgba(255, 255, 255, 0.144),
+        0 41.8px 33.4px rgba(255, 255, 255, 0.172),
+        0 100px 80px rgba(255, 255, 255, 0.24);
     }
   }
   .nav-item {
