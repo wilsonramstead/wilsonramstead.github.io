@@ -15,7 +15,7 @@
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line {
-      background: #006cf8; }
+      background: #2684ff; }
       .menu-btn.close .btn-line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px); }
       .menu-btn.close .btn-line:nth-child(2) {
@@ -42,14 +42,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #a4a4a4;
+    background: #dfdfdf;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #b1b1b1;
+    background: #ececec;
     transform: translate3d(0, 100%, 0);
     justify-content: center;
     transition: all 0.5s ease-out; }
@@ -61,7 +61,7 @@
       background: url("../img/portrait.jpeg");
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #006cf8;
+      border: solid 3px #2684ff;
       box-shadow: 0 2.8px 2.2px rgba(255, 255, 255, 0.068), 0 6.7px 5.3px rgba(255, 255, 255, 0.096), 0 12.5px 10px rgba(255, 255, 255, 0.12), 0 22.3px 17.9px rgba(255, 255, 255, 0.144), 0 41.8px 33.4px rgba(255, 255, 255, 0.172), 0 100px 80px rgba(255, 255, 255, 0.24); }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -69,7 +69,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #006cf8; }
+      color: #2684ff; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -81,7 +81,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #006cf8; }
+      color: #2684ff; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -102,7 +102,7 @@
   .job-1:hover,
   .job-2:hover,
   .job-3:hover {
-    background: #acd0ff;
+    background: #d9e9ff;
     color: black; }
     .job-1:hover span,
     .job-2:hover span,
@@ -114,12 +114,12 @@
       color: #000; }
 
 .job {
-  background: #d7d7d7;
+  background: white;
   padding: 0.5rem;
   border: 2.5px solid black;
-  border-bottom: #006cf8 5px solid; }
+  border-bottom: #2684ff 5px solid; }
   .job .text-secondary {
-    color: #0051bb; }
+    color: #0064e8; }
   .job h3 {
     padding-top: 10px; }
   .job h6 {
@@ -139,7 +139,7 @@
   width: 100%;
   opacity: 0.94;
   visibility: hidden;
-  background: #b1b1b1; }
+  background: #ececec; }
   .jobInfo-1.show,
   .jobInfo-2.show,
   .jobInfo-3.show {
@@ -156,7 +156,7 @@
     height: 100vh;
     overflow: auto;
     display: block;
-    background: #323232;
+    background: #6d6d6d;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .jobInfo-1 .aboutContent.show,
@@ -183,7 +183,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #006cf8 3px solid; }
+    border: #2684ff 3px solid; }
   .bio {
     font-size: 1.5rem; }
     .bio p {
@@ -210,7 +210,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #006cf8 3px solid; }
+    border: #2684ff 3px solid; }
   .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -235,11 +235,11 @@
     border: 3px black solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #006cf8;
+      border-color: #2684ff;
       transition: all 0.5s ease-out; }
 
 .text-secondary2 {
-  color: #006cf8; }
+  color: #2684ff; }
 
 .projectInfo-1,
 .projectInfo-2,
@@ -255,7 +255,7 @@
   width: 100vw;
   opacity: 0.94;
   visibility: hidden;
-  background: #b1b1b1;
+  background: #ececec;
   padding-top: 5%; }
   .projectInfo-1.show,
   .projectInfo-2.show,
@@ -283,7 +283,7 @@
     margin: 0 auto;
     overflow: auto;
     display: block;
-    background: #323232;
+    background: #6d6d6d;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .projectInfo-1 .projectContent .words,
@@ -378,7 +378,7 @@
   .job-1:hover,
   .job-2:hover,
   .job-3:hover {
-    background: #acd0ff;
+    background: #d9e9ff;
     color: black; }
     .job-1:hover span,
     .job-2:hover span,
@@ -390,12 +390,12 @@
       color: #000; }
 
 .job {
-  background: #d7d7d7;
+  background: white;
   padding: 0.5rem;
   border: 2.5px solid black;
-  border-bottom: #006cf8 5px solid; }
+  border-bottom: #2684ff 5px solid; }
   .job .text-secondary {
-    color: #0051bb; }
+    color: #0064e8; }
   .job h3 {
     padding-top: 10px; }
   .job h6 {
@@ -415,7 +415,7 @@
   width: 100%;
   opacity: 0.94;
   visibility: hidden;
-  background: #b1b1b1; }
+  background: #ececec; }
   .jobInfo-1.show,
   .jobInfo-2.show,
   .jobInfo-3.show {
@@ -432,7 +432,7 @@
     height: 100vh;
     overflow: auto;
     display: block;
-    background: #323232;
+    background: #6d6d6d;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .jobInfo-1 .aboutContent.show,
@@ -459,7 +459,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #006cf8 3px solid; }
+    border: #2684ff 3px solid; }
   .bio {
     font-size: 1.5rem; }
     .bio p {
@@ -486,7 +486,7 @@
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: #006cf8 3px solid; }
+    border: #2684ff 3px solid; }
   .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -500,12 +500,12 @@
     grid-area: job3; } }
 
 .boxes div {
-  background: #006cf8;
+  background: #2684ff;
   border: 3px #fff solid;
   border-radius: 20px; }
   .boxes div:hover {
     cursor: pointer;
-    background: #5fa5ff;
+    background: #8cbeff;
     color: #000; }
     .boxes div:hover span {
       color: #000; }
@@ -552,7 +552,7 @@
   box-sizing: border-box; }
 
 body {
-  background: #b1b1b1;
+  background: #ececec;
   color: #000;
   height: 100%;
   margin: 0;
@@ -571,7 +571,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(177, 177, 177, 0.8); }
+      background: rgba(236, 236, 236, 0.8); }
 
 h1,
 h2,
@@ -584,9 +584,9 @@ h3 {
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     padding: 0.2rem 1rem;
-    background: rgba(228, 228, 228, 0.6);
-    border-bottom: 2px solid #006cf8;
-    border-left: 2px solid #006cf8;
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid #2684ff;
+    border-left: 2px solid #2684ff;
     border-right: 2px solid white;
     border-top: 2px solid white; }
 
@@ -607,7 +607,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #006cf8; }
+  color: #2684ff; }
 
 main {
   padding: 2rem;
@@ -617,7 +617,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #006cf8;
+        color: #2684ff;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -630,11 +630,11 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #006cf8;
+    background: #2684ff;
     color: #000; }
 
 .btn-dark {
-  background: #323232;
+  background: #6d6d6d;
   color: #fff; }
 
 .btn-light {
@@ -644,7 +644,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #989898;
+  background: lightgray;
   color: #000;
   position: relative;
   z-index: 1;
