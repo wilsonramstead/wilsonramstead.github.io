@@ -540,7 +540,6 @@
     .boxes div {
       font-size: 2rem;
       padding: 1.5rem 2.5rem;
-      margin-bottom: 3rem;
       transition: all 0.5s ease-out; }
   .pitch {
     width: 60%;
