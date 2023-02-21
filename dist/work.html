@@ -58,7 +58,8 @@
         <div class="projects">
             <div class="item project-1">
                 <a href="#!">
-                    <img src="https://lh3.googleusercontent.com/P7fhh60eDO8lY4PelLliST630NKEXAPDLaMdEqotDyM8AhjleHwrq4XL5lTCXtLf_8WrtsRCECGj4y6KrZrXg5-bbvY-ova3Yrn2pmtcnTr9IkaQUOQwC_44ZmBtQuG3B3Phooo7KubaOOsMR-XmELU0qSsmdTXMRobtNhWY44vleCiq6vtFOI3uZqQ6TdXsqYrvjckXw_eM5ERDXW2wo_awRg0oyQ58G7wTWCOUV5Gi31LAwvotCTI2Ei45bl2Mv2vIWRDZPVAgCsDPsTX3MwBPaML9h-VYNVQYrNv5wvi30LTv4RDVRlSmaupG9SV3ZpejXuWoIBrDkAvIfHlDqqBmcN3Ipx7-ozhhgLhTO6Z-4RHqNAxL_thT7RsQKTYohXhmxzCR8d1rLQU-u312twqqwLr7AQLW19JmpoJAvKuna-mzXUCj7MAMqG-_7RzHMNio-QzFB2hNNo8gG2RUzK1DVXeZ6EsFDvwtw324yvXKAb7KEh8iSIuBgSNgrK2Y4mvNzTtDy9lTMz1rUndM-IEhBS4uqHuADYRIPisva_VvRbJVto4qtnwCepMXaMyMx29VoF_hAds7Dh-43dRUyJBlInh_DIYsB9BNKI0gvKFNtYXF5-Tm-9hc4XthQNZkDFWxUvQTKsr-gHgEGY7lucwX3jmcN0UQTQcOv7AMTfnQmQSHXN2pA_DJyHgeFVDxT0yhlJlevWo73Ra7fvImsCTzKmwBTbhVvoosh5wtBmLYLGU-rePH6bHeWo2moTrETNkPtq5B32vKqWkQnTB-06Cx9caNTO61XM6Ik-T3gtzbfR5C4aSlUHYcS_21d0X6UNNOLjYDeSnVz7uRpus-YRl1LMp6WUYdAgOFxTB_KJfP79CsypdPLX3zCVhfnrc9FVAEgGPagwMhN8Nn3638J5HGkbdL_R0LQP1y-sixPPtLBBak7kKKmDR3U7cIDfr9iK0pEdmqcN-qMGW1Kn3m=w2880-h1800-no" alt="Project #1">
+                    <!-- there was issue with below photo loading in mobile when using google photos link, so storing it locally as workaround (may need to do this with other photos in future if having same issue) -->
+                    <img src="./img/athpotential.png" alt="Project #1">
                     <a href="#" class="btn-light">
                         <i class="fas fa-eye"></i> Project
                     </a>
@@ -125,7 +126,7 @@
         </div>
         <div class="projectInfo-1">
             <div class="projectContent">
-                <h1 class="lg-heading">AllTimeHigh<span class="text-secondary2">Potential</span></h1>
+                <h1 class="lg-heading">ATH <span class="text-secondary2">Potential</span></h1>
                 <p style="text-align: center; margin-top: 10px;">Website is secure, and available to view <a target="_blank" href="https://wilsonramstead.com/allTimeHighPotential/">HERE</a></p>
                 <div class="imgContainer">
                     <iframe height="350" src="https://www.youtube.com/embed/TW1myYwJRdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
@@ -133,10 +134,12 @@
                     <h2 class="text-secondary2">Description</h2>
                     <ul>
                         <li>A web appication to track the all time high potential of investment portfolio assets.</li>
+                        <li>This app will give you your current asset value as well as value of the asset if it was at it's previous all time high price.</li>
+                        <li>The purpose for this app, is many tech stocks and crypto had a very negative year in 2022. So for anybody who held can see their true potential :).</li>
                     </ul>
                     <h2 class="text-secondary2">Technologies</h2>
                     <ul>
-                        <li><strong>Front End:</strong> Angular js</li>
+                        <li><strong>Front End:</strong> Angular js handles entire frontend (single page application). The API's are called via the http service component of angular (to get assets price information from prevoius day close).</li>
                         <li><strong>Server: </strong>Hosted for free via Github Pages</li>
                     </ul>
                 </div>
