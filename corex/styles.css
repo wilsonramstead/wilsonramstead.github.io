@@ -1,0 +1,139 @@
+/* CoreX Web — matches app vibe */
+
+:root{
+  --primary:#87f5ff;
+  --primaryA:rgba(135,245,255,1);
+  --secondary:#9a9a9a;
+  --white:#ffffff;
+  --light:#f8f4f4;
+  --medium:#6e6969;
+  --dark:#0c0c0c;
+  --fadedPurple:rgba(153,153,255,0.3);
+
+  --bg:#0b0c10;
+  --glass:rgba(255,255,255,0.18);
+  --glassBorder:rgba(255,255,255,0.28);
+  --muted:rgba(255,255,255,0.7);
+
+  --wrapW:960px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) fixed;
+  color:var(--white);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-family:Montserrat, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.wrap{max-width:var(--wrapW); margin:0 auto; padding:0 16px}
+
+/* Header */
+.site-header{
+  position:sticky; top:0; z-index:10;
+  background:rgba(255,255,255,0.12);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--glassBorder);
+}
+.site-header .wrap{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 0;
+}
+.brand .logo{
+  font-family:'Audiowide', cursive;
+  font-size:26px; letter-spacing:.5px;
+  color:var(--white);
+  text-shadow:1px 2px 4px rgba(255,255,255,.6);
+}
+.brand .tagline{
+  font-size:12px; color:var(--primary);
+  margin-top:2px; letter-spacing:1px; text-transform:uppercase;
+}
+.nav a{ color:var(--muted); text-decoration:none; margin-left:16px; font-weight:700; font-size:14px }
+.nav a:hover{ color:var(--white); text-decoration:underline }
+
+/* Hero */
+.hero{ padding:28px 0 6px }
+.hero-inner{ display:flex; flex-direction:column; align-items:center; text-align:center }
+.pageTitle{
+  font-family:'Audiowide', cursive;
+  font-size:clamp(42px,10vw,80px);
+  margin:80px 0 8px; line-height:1;
+  text-shadow:1px 2px 4px rgba(255,255,255,.6);
+}
+.subTitle{
+  font-family:'Audiowide', cursive;
+  font-size:clamp(16px,3.5vw,22px);
+  color:var(--light);
+  margin-top:-6px;
+  text-shadow:1px 2px 4px rgba(255,255,255,.6);
+  letter-spacing:.5px;
+}
+.pulse-svg{ margin-top:22px }
+
+/* Buttons (kept only for support actions) */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:10px 16px; min-width:160px; min-height:44px;
+  border-radius:10px; font-weight:800; text-decoration:none;
+  transition:transform .04s ease, filter .2s ease, box-shadow .2s ease;
+  border:3px solid var(--light);
+}
+.btn:active{ transform:scale(.98) }
+.btn:hover{ filter:brightness(1.03) }
+.btn-light{ background:var(--light); color:var(--dark) }
+.btn-outline{ background:transparent; border-color:var(--glassBorder); color:var(--white) }
+
+/* Cards — centered content */
+.card{
+  border-radius:18px;
+  background:var(--glass);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border:1px solid var(--glassBorder);
+  overflow:hidden;
+  padding:16px;
+  margin:18px 0;
+  box-shadow:0 8px 32px rgba(60,0,120,.25);
+  text-align:center; /* Center all text in cards */
+}
+.cardTitle{
+  color:var(--white);
+  font-weight:800; font-size:14px; letter-spacing:.5px;
+  text-transform:uppercase; opacity:.95; margin:0 0 8px;
+}
+
+/* To keep lists readable while the card is centered:
+   center the block, but left-align list text itself. */
+.card ul{
+  display:inline-block; text-align:left; max-width:680px; margin:8px auto;
+}
+
+h2{font-size:22px; margin:0 0 10px}
+h3{font-size:16px; margin:16px 0 8px}
+p{line-height:1.65; color:#e7e7e7; margin:8px 0}
+ul{padding-left:18px}
+li{line-height:1.65; color:#d8d8d8; margin:6px 0}
+a{ color:var(--white); text-decoration:none }
+a:hover{ text-decoration:underline }
+
+.actions{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin:12px 0 4px }
+.note{ color:var(--muted); margin-top:6px }
+
+/* Footer */
+.site-footer{
+  border-top:1px solid var(--glassBorder);
+  color:var(--muted); font-size:13px;
+  padding:18px 0; margin-top:28px;
+}
+.footer-links a{ color:var(--muted) }
+.footer-links a:hover{ color:var(--white) }
+
+@media (min-width:768px){
+  .site-header .wrap{ padding:14px 0 }
+  .card{ padding:18px 20px }
+}

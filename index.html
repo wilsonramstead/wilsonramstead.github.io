@@ -1,19 +1,787 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wilson Innovations</title>
-  <meta http-equiv="refresh" content="0; url=https://wilsoninnovations.net/">
-  <link rel="canonical" href="https://wilsoninnovations.net/">
-  <meta name="robots" content="noindex">
-  <script>window.location.replace("https://wilsoninnovations.net/");</script>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;background:#0e1420;color:#e8edf5}
-    a{color:#7fb4ff}
-  </style>
-</head>
-<body>
-  <p>Redirecting to <a href="https://wilsoninnovations.net/">wilsoninnovations.net</a>&hellip;</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Wilson Innovations — Web Design &amp; Software in St. Petersburg, FL</title>
+    <meta name="description" content="Wilson Innovations is a St. Petersburg, FL studio designing and engineering premium websites and software by hand — from fast local-business sites to Core.X, a complete gym management platform. From $1,000 one-time + $300/month." />
+    <link rel="canonical" href="https://wilsoninnovations.net/" />
+    <meta name="author" content="Wilson Ramstead" />
+    <meta name="theme-color" content="#f4eee4" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Wilson Innovations" />
+    <meta property="og:title" content="Wilson Innovations — Web Design &amp; Software in St. Petersburg, FL" />
+    <meta property="og:description" content="A St. Petersburg studio designing and engineering premium websites and software by hand — from fast local-business sites to Core.X, a full gym management platform." />
+    <meta property="og:url" content="https://wilsoninnovations.net/" />
+    <meta property="og:image" content="https://wilsoninnovations.net/assets/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Wilson Innovations — premium websites and software, built in St. Petersburg, Florida." />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Wilson Innovations — Web Design &amp; Software in St. Petersburg, FL" />
+    <meta name="twitter:description" content="Premium websites and software, designed and engineered by hand in St. Petersburg, Florida." />
+    <meta name="twitter:image" content="https://wilsoninnovations.net/assets/og.jpg" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2317130e'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23f4eee4' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["ProfessionalService", "WebDesignCompany"],
+      "name": "Wilson Innovations LLC",
+      "url": "https://wilsoninnovations.net/",
+      "image": "https://wilsoninnovations.net/assets/og.jpg",
+      "description": "Web design and software studio in St. Petersburg, Florida. Custom websites for local service businesses and Core.X, a complete gym management platform.",
+      "email": "ramsteadwilson@gmail.com",
+      "telephone": "+12064847761",
+      "founder": { "@type": "Person", "name": "Wilson Ramstead" },
+      "areaServed": { "@type": "City", "name": "St. Petersburg, Florida" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "St. Petersburg",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "priceCurrency": "USD",
+        "price": "1000",
+        "description": "Custom website design and build from $1,000 one-time plus $300/month for hosting, maintenance and unlimited small updates."
+      },
+      "sameAs": [
+        "https://corexstudio.net",
+        "https://apps.apple.com/us/app/core-x/id6755406927"
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <!-- living background: aurora blobs + film grain (decorative) -->
+    <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <a class="skip" href="#work">Skip to work</a>
+
+    <!-- ===================== Header ===================== -->
+    <header class="site-header" id="top">
+      <div class="wrap header-row">
+        <a class="brand" href="#top" aria-label="Wilson Innovations home">
+          <span class="brand-mark" aria-hidden="true">W</span>
+          <span class="brand-text">
+            <span class="brand-name">Wilson Innovations</span>
+            <span class="brand-sub">Web design &amp; software · St. Pete, FL</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+          <a class="navlink" href="#work">Work</a>
+          <a class="navlink" href="#templates">Templates</a>
+          <a class="navlink" href="#why">Why a website</a>
+          <a class="navlink" href="#pricing">Pricing</a>
+          <a class="navlink" href="#about">About</a>
+          <a class="btn btn--primary btn--sm header-cta" href="#pricing">Get started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== Hero ===================== -->
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow reveal">Web design &amp; software studio · St. Petersburg, FL</p>
+          <h1 class="reveal" data-d="1">Premium websites and software, <span class="ital">built by hand</span> in St.&nbsp;Petersburg.</h1>
+          <p class="lead reveal" data-d="2">
+            I'm Wilson. I design and engineer everything myself — from fast, mobile-first websites for
+            local businesses to Core.X, a complete gym management platform. Real craft, one developer
+            you can actually text, and a site you own instead of renting inside someone else's platform.
+          </p>
+          <div class="hero-cta reveal" data-d="3">
+            <a class="btn btn--primary" href="#pricing">Get started <span class="arw" aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#work">See our work</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- decorative ticker -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Websites <b class="tick">·</b> Software <b class="tick">·</b> St. Petersburg <b class="tick">·</b> Built by hand <b class="tick">·</b> Core.X <b class="tick">·</b> Fast <b class="tick">·</b> Mobile-first <b class="tick">·</b> You own it <b class="tick">·</b>&nbsp;</span>
+          <span>Websites <b class="tick">·</b> Software <b class="tick">·</b> St. Petersburg <b class="tick">·</b> Built by hand <b class="tick">·</b> Core.X <b class="tick">·</b> Fast <b class="tick">·</b> Mobile-first <b class="tick">·</b> You own it <b class="tick">·</b>&nbsp;</span>
+        </div>
+      </div>
+
+      <!-- ===================== Portfolio ===================== -->
+      <section class="section alt" id="work">
+        <div class="wrap">
+          <p class="eyebrow reveal">Selected work</p>
+          <h2 class="section-title reveal" data-d="1" style="margin-top:14px">A studio is only as good as what it ships.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:20px">Designed, engineered and shipped — end to end.</p>
+
+          <div class="proj-grid">
+            <a class="proj-card reveal" href="#corex-tour">
+              <img class="proj-thumb" src="./assets/corexstudio-home.png" width="1600" height="900" loading="lazy" alt="The Core.X marketing website — 'The operating system your gym runs on.'">
+              <span class="proj-body">
+                <span class="proj-kicker">Flagship product</span>
+                <span class="proj-name">Core.X</span>
+                <p class="proj-desc">A complete gym-management platform — staff dashboards, native iOS &amp; Android apps, CRM, billing and a member community.</p>
+                <span class="proj-link">See the full tour <span class="arw" aria-hidden="true">↓</span></span>
+              </span>
+            </a>
+            <a class="proj-card reveal" href="https://spanglerroofingllc.com" target="_blank" rel="noopener">
+              <img class="proj-thumb" src="./assets/spangler-home.jpg" width="1280" height="900" loading="lazy" alt="Spangler Roofing website hero — 'Protecting Tampa Bay homes, one roof at a time.'">
+              <span class="proj-body">
+                <span class="proj-kicker">Live client site</span>
+                <span class="proj-name">Spangler Roofing</span>
+                <p class="proj-desc">A second-generation St. Pete roofing company — full site with blog and video, live on their own domain.</p>
+                <span class="proj-link">Visit spanglerroofingllc.com <span class="arw" aria-hidden="true">↗</span></span>
+              </span>
+            </a>
+            <a class="proj-card reveal" href="https://amiracademy.com" target="_blank" rel="noopener">
+              <img class="proj-thumb" src="./assets/amiracademy-home.png" width="1200" height="935" loading="lazy" alt="Amir Academy website hero: 'We Build Champions' — MMA, boxing, kickboxing and Brazilian Jiu-Jitsu in St. Petersburg since 1985.">
+              <span class="proj-body">
+                <span class="proj-kicker">Live client site</span>
+                <span class="proj-name">Amir Academy</span>
+                <p class="proj-desc">MMA, boxing and Brazilian Jiu-Jitsu gym teaching since 1985 — bold, fast, and easy for the gym to keep current.</p>
+                <span class="proj-link">Visit amiracademy.com <span class="arw" aria-hidden="true">↗</span></span>
+              </span>
+            </a>
+            <a class="proj-card reveal" href="https://amirpodcasts.com" target="_blank" rel="noopener">
+              <img class="proj-thumb" src="./assets/amirpodcasts-home.jpg" width="1280" height="900" loading="lazy" alt="Amir's Podcast website hero — 'Real Conversations. Real Leaders.'">
+              <span class="proj-body">
+                <span class="proj-kicker">Live client site</span>
+                <span class="proj-name">Amir's Podcast</span>
+                <p class="proj-desc">"Real conversations. Real leaders." — the podcast's home for episodes, guests and YouTube, 40+ episodes in.</p>
+                <span class="proj-link">Visit amirpodcasts.com <span class="arw" aria-hidden="true">↗</span></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Templates ===================== -->
+      <section class="section" id="templates">
+        <div class="wrap">
+          <p class="eyebrow reveal">Templates ready to launch</p>
+          <h2 class="section-title reveal" data-d="1" style="margin-top:14px">Pick a design. I'll make it yours in days.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:20px">
+            Dozens of hand-crafted sites for St. Pete service businesses — each template below began
+            as a one-of-one design from this studio, never stamped out by a site builder. Choose one
+            and I'll rebuild it around your business: your name, your colors, your photos, your reviews.
+          </p>
+
+            <div class="tpl-grid">
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-auto-repair-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-auto-repair-1.jpg" width="720" height="506" loading="lazy" alt="Auto repair template preview — retro-Americana design in parchment and oxide red">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Auto Repair · Design 1</span>
+                  <p class="tpl-desc">Retro-Americana garage vibe — parchment, oxide red and brass with bold signage type.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-tire-shop-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-tire-shop-1.jpg" width="720" height="506" loading="lazy" alt="Tire shop template preview — dark industrial design with red accents">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Tire Shop</span>
+                  <p class="tpl-desc">Rugged and industrial — near-black rubber tones, chrome and hazard-red accents.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-plumbing-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-plumbing-1.jpg" width="720" height="506" loading="lazy" alt="Plumbing template preview — petrol blue and copper design">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Plumbing · Design 1</span>
+                  <p class="tpl-desc">Petrol blue, cream and copper with slab-serif type — established and trustworthy.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-plumbing-2/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-plumbing-2.jpg" width="720" height="506" loading="lazy" alt="Plumbing template preview — deep indigo design with brass accents">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Plumbing · Design 2</span>
+                  <p class="tpl-desc">Deep indigo and brass with blueprint texture — polished, photographic, upscale.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-landscaping-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-landscaping-1.jpg" width="720" height="506" loading="lazy" alt="Landscaping template preview — editorial olive and sage design">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Landscaping · Design 1</span>
+                  <p class="tpl-desc">Editorial and calm — deep olive and sage with warm cream, elegant serif headlines.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-landscaping-2/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-landscaping-2.jpg" width="720" height="506" loading="lazy" alt="Lawn care template preview — modern charcoal-green design">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Lawn &amp; Landscape · Design 2</span>
+                  <p class="tpl-desc">Modern and sharp — charcoal-green with vivid grass accents and a live hours widget.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-pool-care-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-pool-care-1.jpg" width="720" height="506" loading="lazy" alt="Pool service template preview — bright aqua design">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Pool Service</span>
+                  <p class="tpl-desc">Sunny resort-aqua and coral — light, rounded, and friendly for route pros.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-hvac-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-hvac-1.jpg" width="720" height="506" loading="lazy" alt="HVAC template preview — burgundy and gold editorial design">
+                <span class="tpl-body">
+                  <span class="tpl-trade">HVAC</span>
+                  <p class="tpl-desc">Warm editorial style — burgundy and gold on cream, serif headlines, 24/7 trust bar.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-electrician-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-electrician-1.jpg" width="720" height="506" loading="lazy" alt="Electrician template preview — charcoal-indigo with amber accents">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Electrician · Design 1</span>
+                  <p class="tpl-desc">Charcoal-indigo with electric-amber sparks — bold, modern, tap-to-call first.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-electrician-2/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-electrician-2.jpg" width="720" height="506" loading="lazy" alt="Electrician template preview — cobalt blue with spark yellow">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Electrician · Design 2</span>
+                  <p class="tpl-desc">Work-truck cobalt and spark yellow — energetic, friendly, high contrast.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-pressure-washing-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-pressure-washing-1.jpg" width="720" height="506" loading="lazy" alt="Pressure washing template preview — slate navy and cyan">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Pressure Washing · Design 1</span>
+                  <p class="tpl-desc">Slate navy with cyan wipe motifs and a before/after reveal visual.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-pressure-washing-2/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-pressure-washing-2.jpg" width="720" height="506" loading="lazy" alt="Pressure washing template preview — charcoal with fire-red chevrons">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Pressure Washing · Design 2</span>
+                  <p class="tpl-desc">Charcoal-slate with fire-red chevrons and a shield badge — bold and fast.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-detailing-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-detailing-1.jpg" width="720" height="506" loading="lazy" alt="Mobile detailing template preview — dark obsidian with violet gradient">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Mobile Detailing</span>
+                  <p class="tpl-desc">Obsidian black with platinum and a violet-to-fuchsia gloss — showroom-shine luxury.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-sewer-drain-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-sewer-drain-1.jpg" width="720" height="506" loading="lazy" alt="Sewer and drain template preview — black with safety yellow">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Sewer &amp; Drain</span>
+                  <p class="tpl-desc">Near-black with hazard-stripe safety yellow — urgent, emergency-ready energy.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-lawn-care-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-lawn-care-1.jpg" width="720" height="506" loading="lazy" alt="Lawn care template preview — dark green with lime gradient">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Lawn Care</span>
+                  <p class="tpl-desc">Dark green-black with a lime-to-teal gradient — sleek, modern crew branding.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-handyman-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-handyman-1.jpg" width="720" height="506" loading="lazy" alt="Handyman template preview — mulberry with honey gold">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Handyman</span>
+                  <p class="tpl-desc">Warm mulberry and honey-gold on cream — friendly, rounded, done-right charm.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-gas-services-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-gas-services-1.jpg" width="720" height="506" loading="lazy" alt="Gas services template preview — graphite with flame orange">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Gas Services</span>
+                  <p class="tpl-desc">Graphite and burnt flame-orange with condensed type — specialist trade authority.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-window-cleaning-1/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-window-cleaning-1.jpg" width="720" height="506" loading="lazy" alt="Window cleaning template preview — sky azure and glass petrol">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Window Cleaning</span>
+                  <p class="tpl-desc">Sky azure and glass petrol with gold stars — crisp, bright, streak-free energy.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-electrician-3/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-electrician-3.jpg" width="720" height="506" loading="lazy" alt="Electrician template preview — deep marina teal with signal orange">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Electrician · Design 3</span>
+                  <p class="tpl-desc">Deep marina teal with signal orange — waterfront specialist built for dock &amp; boat lift work.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-auto-repair-2/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-auto-repair-2.jpg" width="720" height="506" loading="lazy" alt="Auto repair template preview — petrol navy with burnished copper">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Auto Repair · Design 2</span>
+                  <p class="tpl-desc">Petrol navy and burnished copper with serif headlines — quiet, trusted family-shop craft.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <a class="tpl-card reveal" href="https://wilsonramstead.github.io/template-auto-repair-3/" target="_blank" rel="noopener">
+                <img class="tpl-thumb" src="./assets/templates/template-auto-repair-3.jpg" width="720" height="506" loading="lazy" alt="Auto repair template preview — warm teal and marigold on cream">
+                <span class="tpl-body">
+                  <span class="tpl-trade">Auto Repair · Design 3</span>
+                  <p class="tpl-desc">Warm teal and marigold with editorial serif headlines — the friendly dealership alternative.</p>
+                  <span class="tpl-link">View live demo <span class="arw" aria-hidden="true">↗</span></span>
+                </span>
+              </a>
+              <div class="tpl-card tpl-card--soon reveal">
+                <span class="tpl-body">
+                  <span class="tpl-trade">More on the way</span>
+                  <p class="tpl-desc">New designs land here regularly. Don't see your trade? <a href="sms:+12064847761">Text me</a> — I'll build it.</p>
+                </span>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- ===================== Before / After proof ===================== -->
+      <section class="section alt" id="proof">
+        <div class="wrap">
+          <p class="eyebrow reveal">The difference</p>
+          <h2 class="section-title reveal" data-d="1" style="margin-top:14px">Same roofer. Different first impression.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:20px">
+            Spangler Roofing came to us with a site that wasn't winning jobs. Slide to see what
+            changed — then imagine your before and after.
+          </p>
+
+          <div class="ba reveal" data-d="2" id="ba">
+            <div class="ba__stage">
+              <figure class="ba__pane ba__pane--after">
+                <img src="./assets/proof-after.jpg" width="1280" height="900" loading="lazy" alt="The new Spangler Roofing website by Wilson Innovations — a bold hero reading 'Protecting Tampa Bay homes, one roof at a time' with clear call and estimate buttons." />
+                <figcaption class="ba__label ba__label--after"><span class="ba__label-tag">After</span><span>Built by us</span></figcaption>
+              </figure>
+              <figure class="ba__pane ba__pane--before">
+                <img src="./assets/proof-before.jpg" width="1280" height="900" loading="lazy" alt="Spangler Roofing's previous website — a cluttered, dated layout with red text links and a busy header." />
+                <figcaption class="ba__label ba__label--before"><span class="ba__label-tag">Before</span><span>Their old site</span></figcaption>
+              </figure>
+              <div class="ba__divider" aria-hidden="true">
+                <span class="ba__knob">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M8 5l-6 7 6 7M16 5l6 7-6 7"/></svg>
+                </span>
+              </div>
+              <div class="ba__intro" aria-hidden="true">
+                <span class="ba__hint">Slide to see the before &amp; after <span class="arw" aria-hidden="true">→</span></span>
+              </div>
+              <input class="ba__range" type="range" min="0" max="100" value="50" step="0.1" aria-label="Comparison slider — drag to reveal the old Spangler Roofing site versus the new one" />
+            </div>
+          </div>
+
+          <div class="hero-cta reveal" data-d="3">
+            <a class="btn btn--primary" href="#pricing">Get your after <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Why a website ===================== -->
+      <section class="section" id="why">
+        <div class="wrap">
+          <p class="eyebrow reveal">For local owners</p>
+          <h2 class="section-title reveal" data-d="1" style="margin-top:14px">Why your business needs a website.</h2>
+          <p class="lead reveal" data-d="2" style="margin-top:20px">
+            If you run a real business but you're relying on a Facebook page or a directory listing,
+            you're leaving calls on the table. Here's the plain version.
+          </p>
+
+          <div class="why-grid">
+            <article class="why-card reveal">
+              <div class="why-num">01</div>
+              <h3>They Google you first</h3>
+              <p><span class="em">Customers look you up before they call.</span> No website — or a broken one — and they quietly scroll to the competitor who has a good one. The site is the handshake before the handshake.</p>
+            </article>
+            <article class="why-card reveal" data-d="1">
+              <div class="why-num">02</div>
+              <h3>Your Google link is your first impression</h3>
+              <p>That website link on your Google listing is often the very first thing people click. So many are <span class="em">expired, broken, or missing entirely.</span> Send me your business name and I'll check yours for free.</p>
+            </article>
+            <article class="why-card reveal">
+              <div class="why-num">03</div>
+              <h3>Fast, mobile, one tap to call</h3>
+              <p>Most of your visitors are on a phone with low patience. <span class="em">A site that loads instantly and puts your number one tap away</span> turns a curious look into a booked job.</p>
+            </article>
+            <article class="why-card reveal" data-d="1">
+              <div class="why-num">04</div>
+              <h3>You own it</h3>
+              <p>Not a page trapped inside someone else's platform that can change the rules or disappear. <span class="em">Your domain, your site, your rules</span> — an asset that works for you around the clock.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Pricing ===================== -->
+      <section class="section alt" id="pricing">
+        <div class="wrap">
+          <p class="eyebrow reveal">Pricing</p>
+          <h2 class="section-title reveal" data-d="1" style="margin-top:14px">One clean plan. No surprises.</h2>
+
+          <div class="price-card reveal" data-d="1">
+            <div class="price-grid">
+              <div>
+                <p class="price-eyebrow">Design, build &amp; keep it running</p>
+                <div class="price-amount">From $1,000<br>one&#8209;time <span class="plus">+</span> $300<span style="font-size:.5em">/month</span></div>
+                <p class="price-sub">
+                  The one-time covers your custom design and build. The monthly covers hosting,
+                  maintenance, unlimited small updates, and a local developer one text away.
+                </p>
+                <div class="price-cta">
+                  <a class="btn btn--primary" href="https://buy.stripe.com/bJebJ08qLghE6rycZZ0Ny00" target="_blank" rel="noopener">Get started <span class="arw" aria-hidden="true">→</span></a>
+                </div>
+                <p class="price-note">
+                  Prefer to talk first? <a href="mailto:ramsteadwilson@gmail.com">Email me</a> or
+                  <a href="sms:+12064847761">text&nbsp;(206)&nbsp;484&#8209;7761</a> — no pressure, no sales pitch.
+                </p>
+              </div>
+              <ul class="price-list">
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Custom design &amp; build — never a stock template</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Hosting &amp; domain setup handled for you</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Ongoing maintenance, updates &amp; security</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Unlimited small changes — just text me</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Mobile-first, fast, and built to get you calls</li>
+                <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> A real local developer — not a call center</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================== About ===================== -->
+      <section class="section" id="about">
+        <div class="wrap">
+          <p class="eyebrow reveal">About</p>
+          <h2 class="section-title reveal" data-d="1" style="margin-top:14px">About Wilson.</h2>
+
+          <div class="about-grid">
+            <figure class="about-photo reveal">
+              <img src="./assets/wilson-photo.jpg" width="1500" height="2000" loading="lazy" alt="Wilson Ramstead, founder of Wilson Innovations, on a boat with the Miami skyline behind him." />
+              <figcaption>Wilson Ramstead · Founder, Wilson Innovations LLC</figcaption>
+            </figure>
+
+            <div class="about-body reveal" data-d="1">
+              <p>
+                I'm <strong>Wilson Ramstead</strong>. I was born and raised in Seattle, spent 8+ years
+                in tech, and now live and build in St.&nbsp;Petersburg, Florida.
+              </p>
+              <p>
+                By day I'm a <strong>Support Escalation Engineer at Microsoft</strong>, leading engineers
+                and handling high-priority escalations. I'm a recognized <strong>Subject Matter Expert in
+                Azure Data Factory</strong> and a <strong>Microsoft-certified Azure Data Engineer (DP-203)</strong>.
+              </p>
+              <p>
+                On my own time I design and develop <strong>Core.X</strong>, a complete gym management
+                platform, entirely by myself. Before AI coding tools existed, I built its predecessor —
+                <strong>Goalio</strong>, a full React Native and Azure social goal-tracking app — from the
+                ground up. I know every line of my stack, which is exactly why I can build something small
+                and fast for you and genuinely stand behind it.
+              </p>
+              <p>
+                I moved to St.&nbsp;Pete and I build for the people here. If you run a local business,
+                let's talk.
+              </p>
+
+              <div class="cred-row" aria-hidden="true">
+                <span class="chip">Microsoft Support Escalation Engineer</span>
+                <span class="chip">Azure Data Engineer · DP-203</span>
+                <span class="chip">Azure Data Factory SME</span>
+                <span class="chip">Founder of Core.X</span>
+              </div>
+
+              <div class="about-contact">
+                <div>
+                  <div class="lbl">Email</div>
+                  <a href="mailto:ramsteadwilson@gmail.com">ramsteadwilson@gmail.com</a>
+                </div>
+                <div>
+                  <div class="lbl">Call or text</div>
+                  <a href="tel:+12064847761">(206) 484-7761</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== Core.X deep dive ===================== -->
+      <section class="section alt" id="corex-tour">
+        <div class="wrap">
+          <!-- (a) Core.X deep dive -->
+          <div class="work-block reveal" style="margin-top:0">
+            <div class="work-head">
+              <p class="kicker">Flagship product · the full tour</p>
+              <h3 class="work-title">Core.X — a complete gym management platform, built end&#8209;to&#8209;end by Wilson.</h3>
+              <p class="lead work-body">
+                Staff web dashboards plus native iOS and Android apps for members — every screen,
+                API and workflow built in-house.
+              </p>
+              <div class="chips" aria-label="Core.X capabilities">
+                <span class="chip chip--accent">Scheduling</span>
+                <span class="chip chip--accent">Members</span>
+                <span class="chip chip--accent">CRM</span>
+                <span class="chip chip--accent">Billing</span>
+                <span class="chip chip--accent">Marketing</span>
+                <span class="chip chip--accent">Social feed</span>
+                <span class="chip chip--accent">Leaderboards</span>
+                <span class="chip chip--accent">Messaging</span>
+              </div>
+            </div>
+
+            <!-- marketing site browser frame -->
+            <div style="margin-top:34px">
+              <a class="browser-link" href="https://corexstudio.net" target="_blank" rel="noopener" aria-label="Visit corexstudio.net (opens in a new tab)">
+                <div class="browser">
+                  <div class="browser__bar">
+                    <span class="browser__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="browser__url">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                      corexstudio.net
+                    </span>
+                    <span class="browser__spacer" aria-hidden="true"></span>
+                  </div>
+                  <img class="browser__frame" src="./assets/corexstudio-home.png" width="1600" height="900" alt="The Core.X marketing website — 'The operating system your gym runs on' — showing scheduling, payments, CRM and a member community dashboard." />
+                </div>
+              </a>
+              <div class="visit-row">
+                <a class="btn btn--ink btn--sm" href="https://corexstudio.net" target="_blank" rel="noopener">Visit corexstudio.net <span class="arw" aria-hidden="true">↗</span></a>
+                <span class="visit-tag">The live marketing site — designed &amp; built by Wilson.</span>
+              </div>
+            </div>
+
+            <!-- member app phones -->
+            <div class="subhead">
+              <h4>In members' pockets</h4>
+              <p>Native iOS &amp; Android — goals, streaks, schedule, leaderboards, and a full social community with feed, posts and messaging.</p>
+            </div>
+            <div class="phones" aria-label="Core.X member app screenshots">
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-3.webp" width="598" height="1300" loading="lazy" alt="Core.X app welcome screen with Login, Create Account and Try Demo options." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-11.png" width="459" height="998" loading="lazy" alt="Core.X app member profile with followers, level and XP progress, achievements, and goal tracking with streaks." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-4.webp" width="598" height="1300" loading="lazy" alt="Core.X app goals list showing daily, weekly, monthly and yearly goals with streaks and progress." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-1.webp" width="598" height="1300" loading="lazy" alt="Core.X app leaderboard with a top-three podium and global member rankings by streak days." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-5.webp" width="598" height="1300" loading="lazy" alt="Core.X app accountability calendar highlighting active training days across the month." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-6.webp" width="598" height="1300" loading="lazy" alt="Core.X app class schedule with RSVP buttons for open gym and group classes." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-7.jpg" width="459" height="998" loading="lazy" alt="Core.X app Global Feed: a mosaic photo grid of member workouts, runs, meals and progress across the whole community." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-8.png" width="459" height="998" loading="lazy" alt="Core.X app post detail: a member's strength-training photo with caption, likes and comments." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-9.png" width="459" height="998" loading="lazy" alt="Core.X app messages inbox listing recent conversations with other gym members." /></div></figure>
+              <figure class="phone"><div class="phone__screen"><img src="./assets/app-screen-10.png" width="459" height="998" loading="lazy" alt="Core.X app chat thread: members coordinating an open-gym session in a direct-message conversation." /></div></figure>
+            </div>
+            <div class="appstore-row">
+              <a class="appstore-btn" href="https://apps.apple.com/us/app/core-x/id6755406927" target="_blank" rel="noopener" aria-label="Download Core.X on the App Store (opens in a new tab)">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.365 1.43c0 1.14-.417 2.2-1.25 3.06-.99 1.02-2.18 1.61-3.35 1.52-.14-1.09.4-2.24 1.19-3.06.88-.92 2.36-1.6 3.41-1.52zM20.5 17.06c-.6 1.38-.89 2-1.66 3.22-1.08 1.7-2.6 3.82-4.49 3.83-1.68.02-2.11-1.09-4.39-1.08-2.28.01-2.76 1.1-4.44 1.08-1.89-.02-3.33-1.93-4.41-3.63C-.35 15.77-.6 9.68 1.68 6.9c1.2-1.48 2.98-2.42 4.76-2.42 1.82 0 2.96 1.09 4.46 1.09 1.45 0 2.34-1.09 4.46-1.09 1.6 0 3.28.87 4.48 2.37-3.94 2.16-3.3 7.79.66 8.21z"/></svg>
+                <span><small>Download on the</small><b>App Store</b></span>
+              </a>
+            </div>
+
+            <!-- admin dashboards gallery -->
+            <div class="subhead">
+              <h4>Inside the admin</h4>
+              <p>A tour of the staff dashboards — click any screen to enlarge.</p>
+            </div>
+            <div class="gallery" id="gallery" aria-label="Core.X admin dashboard screenshots">
+              <button class="shot" type="button" data-cap="Core.X — Front Desk">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/front-desk</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-frontdesk.jpg" width="2000" height="1125" loading="lazy" alt="Core.X Front Desk dashboard: members, cancellations, today's classes, revenue and overdue tasks at a glance." />
+                </span>
+                <figcaption><b>Front Desk</b> · the daily command center</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Member Insights">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/members</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-member-insights.jpg" width="2000" height="1125" loading="lazy" alt="Core.X Member Insights: member roster with roles, plans, active vs. cancelling status and direct messaging." />
+                </span>
+                <figcaption><b>Member Insights</b> · roles, plans &amp; status</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — CRM Pipeline">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/crm/pipeline</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-crm-pipeline.jpg" width="2000" height="1125" loading="lazy" alt="Core.X CRM Pipeline: a drag-and-drop sales board moving leads from new to won across stages." />
+                </span>
+                <figcaption><b>CRM Pipeline</b> · leads from first contact to won</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — CRM Dashboard">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/crm</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-crm-dashboard.jpg" width="2000" height="1160" loading="lazy" alt="Core.X CRM Dashboard: sales-pipeline overview with total leads, conversion rate, overdue follow-ups, a pipeline breakdown and leads by source." />
+                </span>
+                <figcaption><b>CRM Dashboard</b> · pipeline &amp; conversion at a glance</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Billing Analytics">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/billing</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-billing-analytics.jpg" width="2000" height="1125" loading="lazy" alt="Core.X Billing Analytics: MRR, annual run rate, revenue forecast and subscription revenue trend." />
+                </span>
+                <figcaption><b>Billing Analytics</b> · MRR, forecasts &amp; run rate</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Attendance Insights">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/attendance</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-attendance.jpg" width="2000" height="1125" loading="lazy" alt="Core.X Attendance Insights: top members by attendance, show rates and who's drifting away." />
+                </span>
+                <figcaption><b>Attendance</b> · who's showing up, who's drifting</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Transfer Portal">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/transfer</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-transfer-portal.jpg" width="2000" height="1125" loading="lazy" alt="Core.X Transfer Portal: migrate members from an old system with import, invite and activation tracking." />
+                </span>
+                <figcaption><b>Transfer Portal</b> · migrate from the old system</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Marketing">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/marketing</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-marketing.jpg" width="2000" height="1125" loading="lazy" alt="Core.X Marketing: outreach tracking across cold calls, walk-ins and prospect sources with conversion status." />
+                </span>
+                <figcaption><b>Marketing</b> · track outreach &amp; where leads come from</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Community Feed">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/feed</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-feed.jpg" width="2000" height="1125" loading="lazy" alt="Core.X community feed: member posts, progress milestones, notifications, today's classes and the leaderboard." />
+                </span>
+                <figcaption><b>Community Feed</b> · the social layer that retains</figcaption>
+              </button>
+            </div>
+            <p class="gallery-hint">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              Scroll for more · tap a screen to enlarge
+            </p>
+
+            <!-- member-facing web app gallery -->
+            <div class="subhead">
+              <h4>The member experience</h4>
+              <p>The web app members log into — schedule, profile, leaderboard and messaging.</p>
+            </div>
+            <div class="gallery" id="gallery-member" aria-label="Core.X member web app screenshots">
+              <button class="shot" type="button" data-cap="Core.X — Member Profile">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/profile</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-profile.jpg" width="2000" height="1160" loading="lazy" alt="Core.X member profile: avatar, level and points, followers, achievements and daily and weekly goal streaks with progress bars." />
+                </span>
+                <figcaption><b>Profile</b> · levels, streaks &amp; achievements</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Member Schedule">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/schedule</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-schedule.jpg" width="2000" height="1160" loading="lazy" alt="Core.X member schedule: a day picker beside class cards for open gym, MetaBurn and personal training with RSVP buttons." />
+                </span>
+                <figcaption><b>Schedule</b> · browse classes &amp; RSVP</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Member Leaderboard">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/leaderboard</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-leaderboard.jpg" width="2000" height="1160" loading="lazy" alt="Core.X member leaderboard: a top-three podium above global rankings of members by streak days, with your own rank highlighted." />
+                </span>
+                <figcaption><b>Leaderboard</b> · a top-three podium &amp; global ranks</figcaption>
+              </button>
+
+              <button class="shot" type="button" data-cap="Core.X — Member Messages">
+                <span class="browser" aria-hidden="true">
+                  <span class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url">app.corexstudio.net/messages</span><span class="browser__spacer"></span></span>
+                  <img class="browser__frame" src="./assets/corex-messages.png" width="2000" height="1160" loading="lazy" alt="Core.X member messaging: a conversation list beside an open chat thread coordinating an open-gym session." />
+                </span>
+                <figcaption><b>Messages</b> · member-to-member chat on the web</figcaption>
+              </button>
+            </div>
+            <p class="gallery-hint">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              Scroll for more · tap a screen to enlarge
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand">
+              <span class="brand-mark" aria-hidden="true">W</span>
+              <b>Wilson Innovations LLC</b>
+            </div>
+            <p class="footer-tag">Web design &amp; software, designed and engineered by hand in St.&nbsp;Petersburg, Florida.</p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Contact</h5>
+            <a href="mailto:ramsteadwilson@gmail.com">ramsteadwilson@gmail.com</a>
+            <a href="tel:+12064847761">(206) 484-7761</a>
+            <p>St. Petersburg, FL</p>
+          </div>
+
+          <div class="footer-col">
+            <h5>Explore</h5>
+            <a href="#work">Our work</a>
+            <a href="#pricing">Pricing</a>
+            <a href="https://corexstudio.net" target="_blank" rel="noopener">Core.X → corexstudio.net</a>
+            <a href="https://apps.apple.com/us/app/core-x/id6755406927" target="_blank" rel="noopener">Core.X on the App Store</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="year">2026</span> Wilson Innovations LLC. All rights reserved.</span>
+          <span><a href="#top">Back to top ↑</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================== Lightbox ===================== -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged screenshot">
+      <button class="lightbox__close" id="lb-close" aria-label="Close">&times;</button>
+      <button class="lightbox__nav prev" id="lb-prev" aria-label="Previous screenshot">‹</button>
+      <button class="lightbox__nav next" id="lb-next" aria-label="Next screenshot">›</button>
+      <div class="lightbox__inner">
+        <div class="browser">
+          <div class="browser__bar">
+            <span class="browser__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser__url" id="lb-url">Core.X</span>
+            <span class="browser__spacer" aria-hidden="true"></span>
+          </div>
+          <img class="lightbox__frame" id="lb-img" src="" alt="" />
+        </div>
+        <p class="lightbox__cap" id="lb-cap"></p>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+  </body>
 </html>

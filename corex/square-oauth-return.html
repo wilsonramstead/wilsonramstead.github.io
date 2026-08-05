@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Connected</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: white;
+    }
+    body.error-state {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+    .container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .icon-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: white;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-circle .symbol {
+      font-size: 50px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 10px 0;
+      font-weight: 600;
+    }
+    p {
+      font-size: 16px;
+      opacity: 0.9;
+      margin: 0 0 24px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: rgba(255, 255, 255, 0.25);
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      margin-bottom: 14px;
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+    .hint {
+      font-size: 14px;
+      opacity: 0.75;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon-circle">
+      <span class="symbol" id="symbol">✓</span>
+    </div>
+    <h1 id="title">Square Connected!</h1>
+    <p id="message">Your Square account has been successfully linked. Tap the button below or close this page to return to the app.</p>
+    <!-- corex:// opens the app without navigating to a specific screen.
+         App.js will detect paymentSetupComplete=true and open automatically. -->
+    <a href="corex://" class="btn" id="return-btn">Return to App</a>
+    <p class="hint">Or tap Done / Close at the top of this screen.</p>
+  </div>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var isError = params.get('error') === 'true';
+      var errorMsg = params.get('message') || 'Something went wrong during authorization.';
+
+      if (isError) {
+        document.body.classList.add('error-state');
+        document.getElementById('symbol').textContent = '✕';
+        document.getElementById('symbol').style.color = '#f5576c';
+        document.getElementById('title').textContent = 'Connection Failed';
+        document.getElementById('message').textContent = errorMsg + ' Please return to the app and try again.';
+        document.getElementById('return-btn').style.display = 'none';
+      } else {
+        document.getElementById('symbol').style.color = '#667eea';
+      }
+    })();
+  </script>
+</body>
+</html>
