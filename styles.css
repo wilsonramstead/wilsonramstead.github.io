@@ -812,6 +812,50 @@ a.tpl-card:hover .tpl-link { color: var(--cyan-txt); }
 }
 .tpl-card--soon a { color: var(--cyan-txt); font-weight: 600; border-bottom: 1px solid rgba(125,234,255,.4); }
 
+/* homepage curated grid — 7 favorites + See-all card:
+   4-up on laptop (2 rows), 3-up on tablet (~3 rows), trimmed on phone */
+#templates .tpl-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1024px){ #templates .tpl-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px){ #templates .tpl-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px){
+  #templates .tpl-grid { grid-template-columns: 1fr; }
+  /* keep it short on phones: 3 favorites + the See-all card */
+  #templates .tpl-grid > .tpl-card:nth-child(n+4):nth-child(-n+7) { display: none; }
+}
+
+/* "See all templates" CTA card — glass with a gradient border + glow */
+a.tpl-card--all {
+  position: relative;
+  align-items: center; justify-content: center; text-align: center;
+  min-height: 250px;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(180deg, rgba(16,19,40,.96), rgba(9,11,24,.96)) padding-box,
+    linear-gradient(135deg, rgba(62,233,255,.65), rgba(76,99,255,.75) 45%, rgba(168,85,247,.65)) border-box;
+  box-shadow: 0 0 0 1px rgba(76,99,255,.1), 0 14px 44px rgba(76,99,255,.2), inset 0 1px 0 rgba(255,255,255,.07);
+}
+a.tpl-card--all:hover {
+  transform: translateY(-5px);
+  border-color: transparent;
+  box-shadow: var(--shadow-lg), var(--glow-md);
+}
+.tpl-card--all .tpl-body { flex: 0 1 auto; align-items: center; gap: 10px; padding: 28px 22px; }
+.tpl-all-num {
+  font-family: var(--display); font-weight: 800; font-size: 2.7rem; line-height: 1;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.tpl-card--all .tpl-trade { font-size: 1.28rem; }
+.tpl-card--all .tpl-desc { max-width: 26ch; }
+.tpl-all-arw {
+  margin-top: 8px;
+  font-size: 2rem; line-height: 1; color: var(--cyan-txt);
+  transition: transform .3s ease;
+}
+a.tpl-card--all:hover .tpl-all-arw { transform: translateX(7px); }
+
+/* templates.html — current-page nav state */
+.nav a.navlink[aria-current="page"] { color: var(--text); background: rgba(148,158,255,.12); }
+
 /* =========================================================================
    Before / After proof slider — glass frame + glowing divider
    ========================================================================= */
